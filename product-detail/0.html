@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فروشگاه معصومی</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    <script src="../assets/js/client.js" defer></script>
+</head>
+
+<body>
+<a id="header-link" href="../index.html">
+        <header>
+            <h1>فروشگاه معصومی</h1>
+        </header>
+    </a>
+<nav >
+   <ul >
+    <li><a href="../all-products.html">محصولات</a></li>
+    <li><a href="../men-products.html">مردانه</a></li>
+     <li><a href="../women-products.html">زنانه</a></li>
+     <li><a href="../accessory-products.html">زیورآلات</a></li>
+    <li><a href="../impressum.html">تماس با ما</a></li>
+  </ul>
+</nav>
+
+<div id="page-container">
+    <div id="page-grid">
+        <div id="content-wraper">
+<div class="product-title">
+    <h1>ساعت نقره ای</h1>
+    <h2>کد محصول: 0</h2>
+</div>
+
+<div id="product-detail">
+    <img class="product-image" src="../assets/images/products/silver-watch.jpg" alt="">
+
+    <div class="product-info">
+        <ul>
+            <li><strong>قیمت:</strong> IRR 1,200,000</li>
+        </ul>
+
+        <!-- form to select number of products and add it to warenkorb-->
+        <form method="POST" action="/to_cart" class="to-cart-form">
+            <input type="hidden" name="id" value="0">
+            <label for="amount">تعداد?
+                <input type="number" id="amount" name="amount" min="1" max="20" step="1" value="1">
+            </label>
+            <input type="submit" value="افزودن سبد خرید">
+        </form>
+    </div>
+</div>
+<div id="comments">
+    <form action="/product-detail/0" method="post">
+        <textarea name="comments" >
+Hey... say something!
+</textarea>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+<h3 class="similar-products-title">محصولات مشابه</h3>
+<div class="similar-products">
+    <a href="2.html">
+        <img src="../assets/images/products/schwarz-kuppfer-uhr.jpg" alt="">
+    </a>
+</div></div>
+        <aside><h4 class="bar warenkorb" id ="empty">سبد خرید خالی است</h4>
+</aside>
+    </div>
+    <footer id="footer">
+    <p> &copy; <span class="time"></span> فروشگاه معصومی (<a href="impressum">تماس با ما</a>) </p>
+</footer>
+</div>
+
+</body>
+
+</html>
